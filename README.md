@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Secure Login System
 
 A secure web-based authentication system built with Python, Flask, SQLite and bcrypt.
@@ -39,3 +40,6 @@ Secure Login System/
 │
 └── database/
     └── users.db
+=======
+# Secure-Login-System
+>>>>>>> 74ca2f320e3d9d22e995a85800e746e3636c99e1
