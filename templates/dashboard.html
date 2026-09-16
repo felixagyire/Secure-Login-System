@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login System - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="nav-brand">
+        🛡️ Secure Login
+    </div>
+
+    <a
+        href="{{ url_for('logout') }}"
+        class="logout-btn"
+    >
+        Logout
+    </a>
+
+</nav>
+
+<main class="dashboard-container">
+
+    <div class="dashboard-card">
+
+        <div class="dashboard-icon">
+            🔐
+        </div>
+
+        <h1>Welcome, {{ username }}!</h1>
+
+        <p class="dashboard-subtitle">
+            You have successfully authenticated.
+        </p>
+
+        <div class="security-status">
+            <span class="status-dot"></span>
+            Secure Session Active
+        </div>
+
+        <div class="account-details">
+
+            <div class="detail-box">
+
+                <span class="detail-label">
+                    Username
+                </span>
+
+                <span class="detail-value">
+                    {{ username }}
+                </span>
+
+            </div>
+
+            <div class="detail-box">
+
+                <span class="detail-label">
+                    Email
+                </span>
+
+                <span class="detail-value">
+                    {{ email }}
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="security-features">
+
+            <h2>Security Features</h2>
+
+            <div class="feature">
+                <span>✓</span>
+                Password protected with bcrypt hashing
+            </div>
+
+            <div class="feature">
+                <span>✓</span>
+                Input validation enabled
+            </div>
+
+            <div class="feature">
+                <span>✓</span>
+                Parameterized SQL queries enabled
+            </div>
+
+            <div class="feature">
+                <span>✓</span>
+                Session authentication enabled
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
